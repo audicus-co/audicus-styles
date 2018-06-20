@@ -1,22 +1,16 @@
 {
   "name": "barebones",
   "version": "1.0.0",
-  "author": "Greg <greg@codecomment.io>",
+  "author": "Greg Hunt <greg@codecomment.io>",
   "homepage": "https://codecomment.io",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/codecommet/barebones.git"
+    "url": "git@github.com:audicus-co/audicus-styles.git"
   },
   "bugs": {
-    "url": "https://github.com/codecomment/barebones/issues"
+    "url": "https://github.com/audicus-co/audicus-styles/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
   "engines": {
     "node": ">= 6.9.4"
   },
@@ -37,6 +31,6 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.12.9",
+    "popper.js": "^1.12.9"
   }
 }

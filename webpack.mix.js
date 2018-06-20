@@ -36,7 +36,7 @@ mix.webpackConfig({
  |
  */
 
-mix.browserSync('barebones.test');
+mix.browserSync('audicus-styles.test');
 
 mix.js('src/scripts/main.js', 'dist/scripts/')
    .sass('src/styles/main.scss', 'dist/styles/')

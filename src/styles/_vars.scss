@@ -1,2 +1,57 @@
-$body-bg: slateGrey;
-$body-color: white;
+// Brand Colors
+$audicus-white: #FFFFFF;
+$audicus-blue: #17B7E6;
+$audicus-orange: #E99938;
+$audicus-red: #F24164;
+$audicus-green: #96E02D;
+$audicus-yellow: #F7D21E;
+$audicus-black: #161621;
+$audicus-dark: #313146;
+$audicus-mid: #858597;
+$audicus-light: #CDCDE4;
+
+// Color Synonyms
+$color-white: $audicus-white;
+$color-blue: $audicus-blue;
+$color-orange: $audicus-orange;
+$color-red: $audicus-red;
+$color-green: $audicus-green;
+$color-yellow: $audicus-yellow;
+$color-black: $audicus-black;
+$color-dark: $audicus-dark;
+$color-mid: $audicus-mid;
+$color-light: $audicus-light;
+
+$colors: (
+  white: $color-white,
+  blue: $color-blue,
+  orange: $color-orange,
+  red: $color-red,
+  green: $color-green,
+  yellow: $color-yellow,
+  black: $color-black,
+  dark: $color-dark,
+  mid: $color-mid,
+  light: $color-light
+);
+
+/*
+Fonts
+ */
+$font-size-base: 1rem;
+$font-serif: "Noto Serif";
+$font-sans-serif: "Source Sans Pro";
+
+// Heading
+$font-heading-family: $font-serif;
+
+// Body
+$font-body-family: $font-sans-serif;
+
+/*
+Vertical Space
+ */
+$control-height: 45px;
+$button-height: $control-height;
+$icon-sm: $control-height;
+$icon-lg: $icon-sm * 1.5;
