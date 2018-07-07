@@ -1,5 +1,5 @@
 $white: $color-white;
-$black: $color-black;
+$black: #000;
 $gray-100: lighten($black, 90%);
 $gray-200: lighten($black, 80%);
 $gray-300: lighten($black, 70%);
@@ -22,7 +22,7 @@ $color-mid: $audicus-mid;
 $color-light: $audicus-light;
 
 $blue:    $color-blue;
-$cyan:    lighten($blue, 10%)
+$cyan:    lighten($blue, 10%);
 $red:     $color-red;
 $orange:  $color-orange;
 $yellow:  $color-yellow;
@@ -44,10 +44,10 @@ $body-color:                $color-dark;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary") !default;
-$link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 15%) !default;
-$link-hover-decoration:     underline !default;
+$link-color:                $primary;
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-decoration:     underline;
 
 
 // // Variables

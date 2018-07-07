@@ -1,0 +1,13 @@
+// Background Colors
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+// Background Colors, Grays
+@each $name, $color in $grays {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}

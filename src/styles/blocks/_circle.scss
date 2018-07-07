@@ -1,0 +1,18 @@
+.circle {
+  border-radius: 999em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+  vertical-align: top;
+
+  &-lg {
+    padding: 3em;
+  }
+  &-sm {
+    padding: 0.5em;
+  }
+}
