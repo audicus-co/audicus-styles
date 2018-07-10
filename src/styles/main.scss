@@ -8,11 +8,4 @@
 @import "layout";
 @import "blocks/blocks.scss";
 @import "helpers";
-
-
-
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include button-variant(#fff, $value);
-  }
-}
+@import "overrides";
