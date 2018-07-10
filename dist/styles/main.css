@@ -50,7 +50,7 @@ Vertical Space
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-sans-serif: "Source Sans Pro", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -89,7 +89,7 @@ section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -539,7 +539,7 @@ mark,
   padding: 0.25rem;
   background-color: #FFFFFF;
   border: 1px solid #b3b2b2;
-  border-radius: 0.25rem;
+  border-radius: none;
   max-width: 100%;
   height: auto;
 }
@@ -573,7 +573,7 @@ kbd {
   font-size: 87.5%;
   color: #FFFFFF;
   background-color: #1a1919;
-  border-radius: 0.2rem;
+  border-radius: none;
 }
 
 kbd kbd {
@@ -2238,14 +2238,14 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #4d4c4c;
   background-color: #FFFFFF;
   background-clip: padding-box;
   border: 1px solid #999999;
-  border-radius: 0.25rem;
+  border-radius: none;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2300,7 +2300,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px);
+  height: calc(2.5rem + 2px);
 }
 
 select.form-control:focus::-ms-value {
@@ -2315,8 +2315,8 @@ select.form-control:focus::-ms-value {
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: calc(0.5rem + 1px);
+  padding-bottom: calc(0.5rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.5;
@@ -2339,8 +2339,8 @@ select.form-control:focus::-ms-value {
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-bottom: 0;
   line-height: 1.5;
   color: #313146;
@@ -2374,7 +2374,7 @@ select.form-control:focus::-ms-value {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: none;
 }
 
 select.form-control-sm:not([size]):not([multiple]),
@@ -2395,7 +2395,7 @@ select.form-control-sm:not([size]):not([multiple]),
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-radius: none;
 }
 
 select.form-control-lg:not([size]):not([multiple]),
@@ -2818,7 +2818,7 @@ select.form-control-lg:not([size]):not([multiple]),
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -2826,11 +2826,11 @@ select.form-control-lg:not([size]):not([multiple]),
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  border: none solid transparent;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3547,7 +3547,7 @@ fieldset:disabled a.btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0.3rem;
+  border-radius: none;
 }
 
 .btn-sm,
@@ -3555,7 +3555,7 @@ fieldset:disabled a.btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: none;
 }
 
 .btn-block {
@@ -3649,7 +3649,7 @@ input[type="button"].btn-block {
   background-color: #FFFFFF;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .dropdown-menu-right {
@@ -3857,7 +3857,7 @@ input[type="button"].btn-block {
 .btn-group-vertical .btn + .btn-group,
 .btn-group-vertical .btn-group + .btn,
 .btn-group-vertical .btn-group + .btn-group {
-  margin-left: -1px;
+  margin-left: -none;
 }
 
 .btn-toolbar {
@@ -3892,8 +3892,8 @@ input[type="button"].btn-block {
 }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .dropdown-toggle-split::after,
@@ -3940,7 +3940,7 @@ input[type="button"].btn-block {
 .btn-group-vertical > .btn + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .btn-group {
-  margin-top: -1px;
+  margin-top: -none;
   margin-left: 0;
 }
 
@@ -4083,7 +4083,7 @@ input[type="button"].btn-block {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0.375rem 0.75rem;
+  padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -4093,7 +4093,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: #cccccc;
   border: 1px solid #999999;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .input-group-text input[type="radio"],
@@ -4199,7 +4199,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-label::before {
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
@@ -4245,7 +4245,7 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.5rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
   color: #4d4c4c;
@@ -4253,7 +4253,7 @@ input[type="button"].btn-block {
   background: #FFFFFF url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
   border: 1px solid #999999;
-  border-radius: 0.25rem;
+  border-radius: none;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -4305,7 +4305,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.5rem + 2px);
   margin-bottom: 0;
 }
 
@@ -4313,7 +4313,7 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.5rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -4338,13 +4338,13 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(2.25rem + 2px);
-  padding: 0.375rem 0.75rem;
+  height: calc(2.5rem + 2px);
+  padding: 0.5rem 0.75rem;
   line-height: 1.5;
   color: #4d4c4c;
   background-color: #FFFFFF;
   border: 1px solid #999999;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .custom-file-label::after {
@@ -4354,14 +4354,14 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: 2.25rem;
-  padding: 0.375rem 0.75rem;
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
   line-height: 1.5;
   color: #4d4c4c;
   content: "Browse";
   background-color: #cccccc;
   border-left: 1px solid #999999;
-  border-radius: 0 0.25rem 0.25rem 0;
+  border-radius: 0 none none 0;
 }
 
 .custom-range {
@@ -4515,8 +4515,8 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
 
 .nav-tabs .nav-link:hover,
@@ -4544,7 +4544,7 @@ input[type="button"].btn-block {
 }
 
 .nav-pills .nav-link {
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .nav-pills .nav-link.active,
@@ -4669,7 +4669,7 @@ input[type="button"].btn-block {
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .navbar-toggler:hover,
@@ -5073,7 +5073,7 @@ input[type="button"].btn-block {
   background-color: #FFFFFF;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .card > hr {
@@ -5082,13 +5082,13 @@ input[type="button"].btn-block {
 }
 
 .card > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
 
 .card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: none;
+  border-bottom-left-radius: none;
 }
 
 .card-body {
@@ -5127,7 +5127,7 @@ input[type="button"].btn-block {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: calc(none - 1px) calc(none - 1px) 0 0;
 }
 
 .card-header + .list-group .list-group-item:first-child {
@@ -5141,7 +5141,7 @@ input[type="button"].btn-block {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 calc(none - 1px) calc(none - 1px);
 }
 
 .card-header-tabs {
@@ -5167,19 +5167,19 @@ input[type="button"].btn-block {
 
 .card-img {
   width: 100%;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(none - 1px);
 }
 
 .card-img-top {
   width: 100%;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(none - 1px);
+  border-top-right-radius: calc(none - 1px);
 }
 
 .card-img-bottom {
   width: 100%;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(none - 1px);
+  border-bottom-left-radius: calc(none - 1px);
 }
 
 .card-deck {
@@ -5288,19 +5288,19 @@ input[type="button"].btn-block {
   }
 
   .card-group > .card:only-child {
-    border-radius: 0.25rem;
+    border-radius: none;
   }
 
   .card-group > .card:only-child .card-img-top,
   .card-group > .card:only-child .card-header {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
   }
 
   .card-group > .card:only-child .card-img-bottom,
   .card-group > .card:only-child .card-footer {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: none;
+    border-bottom-left-radius: none;
   }
 
   .card-group > .card:not(:first-child):not(:last-child):not(:only-child) {
@@ -5365,7 +5365,7 @@ input[type="button"].btn-block {
   margin-bottom: 1rem;
   list-style: none;
   background-color: #cccccc;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -5397,18 +5397,18 @@ input[type="button"].btn-block {
   display: flex;
   padding-left: 0;
   list-style: none;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .page-link {
   position: relative;
   display: block;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5625rem 0.95rem;
   margin-left: -1px;
-  line-height: 1.25;
-  color: #E99938;
+  line-height: 1.4375rem;
+  color: #858597;
   background-color: #FFFFFF;
-  border: 1px solid #b3b2b2;
+  border: 1px solid #CDCDE4;
 }
 
 .page-link:hover {
@@ -5432,20 +5432,20 @@ input[type="button"].btn-block {
 
 .page-item:first-child .page-link {
   margin-left: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
 }
 
 .page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
 }
 
 .page-item.active .page-link {
   z-index: 1;
   color: #FFFFFF;
   background-color: #E99938;
-  border-color: #E99938;
+  border-color: #CDCDE4;
 }
 
 .page-item.disabled .page-link {
@@ -5463,13 +5463,13 @@ input[type="button"].btn-block {
 }
 
 .pagination-lg .page-item:first-child .page-link {
-  border-top-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
 }
 
 .pagination-lg .page-item:last-child .page-link {
-  border-top-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
 }
 
 .pagination-sm .page-link {
@@ -5479,13 +5479,13 @@ input[type="button"].btn-block {
 }
 
 .pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: none;
+  border-bottom-left-radius: none;
 }
 
 .pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: none;
+  border-bottom-right-radius: none;
 }
 
 .badge {
@@ -5497,7 +5497,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .badge:empty {
@@ -5615,7 +5615,7 @@ input[type="button"].btn-block {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #cccccc;
-  border-radius: 0.3rem;
+  border-radius: none;
 }
 
 @media (min-width: 576px) {
@@ -5635,7 +5635,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .alert-heading {
@@ -5798,7 +5798,7 @@ input[type="button"].btn-block {
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #cccccc;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .progress-bar {
@@ -5892,14 +5892,14 @@ input[type="button"].btn-block {
 }
 
 .list-group-item:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
 
 .list-group-item:last-child {
   margin-bottom: 0;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: none;
+  border-bottom-left-radius: none;
 }
 
 .list-group-item:hover,
@@ -6172,7 +6172,7 @@ button.close {
   background-color: #FFFFFF;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: none;
   outline: 0;
 }
 
@@ -6206,8 +6206,8 @@ button.close {
           justify-content: space-between;
   padding: 1rem;
   border-bottom: 1px solid #cccccc;
-  border-top-left-radius: 0.3rem;
-  border-top-right-radius: 0.3rem;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
 
 .modal-header .close {
@@ -6284,7 +6284,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6399,7 +6399,7 @@ button.close {
   color: #FFFFFF;
   text-align: center;
   background-color: #000;
-  border-radius: 0.25rem;
+  border-radius: none;
 }
 
 .popover {
@@ -6409,7 +6409,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6428,7 +6428,7 @@ button.close {
   background-color: #FFFFFF;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: none;
 }
 
 .popover .arrow {
@@ -6436,7 +6436,7 @@ button.close {
   display: block;
   width: 1rem;
   height: 0.5rem;
-  margin: 0 0.3rem;
+  margin: 0 none;
 }
 
 .popover .arrow::before,
@@ -6487,7 +6487,7 @@ button.close {
   left: calc((0.5rem + 1px) * -1);
   width: 0.5rem;
   height: 1rem;
-  margin: 0.3rem 0;
+  margin: none 0;
 }
 
 .bs-popover-right .arrow::before,
@@ -6560,7 +6560,7 @@ button.close {
   right: calc((0.5rem + 1px) * -1);
   width: 0.5rem;
   height: 1rem;
-  margin: 0.3rem 0;
+  margin: none 0;
 }
 
 .bs-popover-left .arrow::before,
@@ -6589,8 +6589,8 @@ button.close {
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-top-left-radius: calc(0.3rem - 1px);
-  border-top-right-radius: calc(0.3rem - 1px);
+  border-top-left-radius: calc(none - 1px);
+  border-top-right-radius: calc(none - 1px);
 }
 
 .popover-header:empty {
@@ -7049,27 +7049,27 @@ button.bg-dark:focus {
 }
 
 .rounded {
-  border-radius: 0.25rem !important;
+  border-radius: none !important;
 }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important;
+  border-top-left-radius: none !important;
+  border-top-right-radius: none !important;
 }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
+  border-top-right-radius: none !important;
+  border-bottom-right-radius: none !important;
 }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: none !important;
+  border-bottom-left-radius: none !important;
 }
 
 .rounded-left {
-  border-top-left-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important;
+  border-top-left-radius: none !important;
+  border-bottom-left-radius: none !important;
 }
 
 .rounded-circle {
@@ -10524,7 +10524,7 @@ a.text-dark:focus {
 h1,
 .h1,
 .heading {
-  font-family: "Noto Serif";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-style: normal;
   width: 100%;
@@ -10535,7 +10535,7 @@ h1,
 h2,
 .h2,
 .subheading {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 100%;
@@ -10546,7 +10546,7 @@ h2,
 h3,
 .h3,
 .smallheading {
-  font-family: "Source Sans Pro";
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 100%;

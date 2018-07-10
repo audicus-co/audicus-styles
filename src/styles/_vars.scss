@@ -35,15 +35,21 @@ $colors: (
   light: $color-light
 );
 
+$theme-colors: (
+  primary: $audicus-orange,
+  secondary: $audicus-blue
+);
+
 /*
 Fonts
  */
 $font-size-base: 1rem;
-$font-serif: "Noto Serif";
-$font-sans-serif: "Source Sans Pro";
+$font-serif: 'Noto Serif', serif;
+$font-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-sans-serif: $font-sans-serif;
 
 // Heading
-$font-heading-family: $font-serif;
+$font-heading-family: $font-sans-serif;
 
 // Body
 $font-body-family: $font-sans-serif;
@@ -55,3 +61,23 @@ $control-height: 45px;
 $button-height: $control-height;
 $icon-sm: $control-height;
 $icon-lg: $icon-sm * 1.5;
+
+//paginations
+$pagination-color: $audicus-mid;
+$pagination-border-color: $audicus-light;
+$pagination-active-border-color: $audicus-light;
+$pagination-padding-x: 0.95rem;
+$pagination-padding-y: 0.5625rem;
+$pagination-line-height:1.4375rem;
+
+//buttons
+$btn-font-weight: 700;
+$btn-border-width: none;
+$btn-padding-x: $font-size-base;
+$btn-border-radius: none;
+$link-hover-color: $audicus-dark;
+$border-radius: none;
+$border-radius-lg: none;
+$border-radius-sm: none;
+$input-btn-padding-y: 0.5rem;
+$btn-box-shadow: inset 0 1px 0 $audicus-white, 0 1px 1px $audicus-white;
