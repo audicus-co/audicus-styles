@@ -35,18 +35,35 @@ $colors: (
   light: $color-light
 );
 
+$theme-colors: (
+  primary: $audicus-orange,
+  secondary: $audicus-blue
+);
+
+$enable-gradients: false;
+
 /*
 Fonts
  */
 $font-size-base: 1rem;
-$font-serif: "Noto Serif";
-$font-sans-serif: "Source Sans Pro";
+$font-serif: 'Noto Serif', serif;
+$font-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-sans-serif: $font-sans-serif;
+$font-size-base: ($font-size-base * 1.125);
+$font-size-lg: ($font-size-base * 1.125);
+$font-size-sm: ($font-size-base * 1);
+
+//font-weight 
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
 
 // Heading
-$font-heading-family: $font-serif;
+$font-heading-family: $font-sans-serif;
 
 // Body
 $font-body-family: $font-sans-serif;
+$line-height-base: 1.61;
 
 /*
 Vertical Space
@@ -55,3 +72,113 @@ $control-height: 45px;
 $button-height: $control-height;
 $icon-sm: $control-height;
 $icon-lg: $icon-sm * 1.5;
+
+//paginations
+$pagination-color: $audicus-mid;
+$pagination-border-color: $audicus-light;
+$pagination-active-border-color: $audicus-light;
+$pagination-padding-x: 0.95rem;
+$pagination-padding-y: 0.5625rem;
+$pagination-line-height:1.4375rem;
+
+
+
+//buttons
+// $btn-font-weight: $font-weight-bold;
+// $btn-border-width: none;
+// $btn-padding-x: $font-size-base;
+// $btn-border-radius: none;
+// $link-color: $audicus-dark;
+// $link-hover-color: $audicus-dark;
+// $border-radius: none;
+// $border-radius-lg: none;
+// $border-radius-sm: none;
+// $input-btn-padding-y: 0.5rem;
+// $btn-box-shadow: inset 0 1px 0 $audicus-white, 0 1px 1px $audicus-white;
+
+$btn-padding-y:               0.5rem;
+$btn-padding-x:               2rem;
+$btn-line-height:             1.125;
+$btn-font-weight:             $font-weight-bold;
+$btn-box-shadow:              none;
+$btn-focus-box-shadow:        none;
+$btn-disabled-opacity:        .65;
+$btn-active-box-shadow:       none;
+
+$btn-link-disabled-color:     $audicus-light;
+
+$btn-block-spacing-y:         1.0625rem;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           2px;
+$btn-border-radius-lg:        2px;
+$btn-border-radius-sm:        2px;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $audicus-dark;
+$link-decoration: underline;
+
+// // Badges
+//
+$badge-font-size:                   1.125rem;
+$badge-font-weight:                 $font-weight-bold;
+$badge-padding-y:                   .42em !default;
+$badge-padding-x:                   .4em !default;
+$badge-border-radius:               0.9444rem;
+
+$badge-pill-padding-x:              1.485em;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          0.9444rem;
+
+// Forms
+$input-line-height: 1.44;
+$input-color: $audicus-dark;
+$input-border-color: $audicus-light;
+$input-padding-y: 0.5625rem;
+$input-padding-x: 0.875rem;
+$input-border-radius: 2px;
+$form-group-margin-bottom: 2.1875rem;
+$input-disabled-bg: $audicus-white;
+$input-placeholder-color: $audicus-dark;
+$input-focus-box-shadow: transparent;
+
+// down
+$dropdown-min-width: 14.375rem;
+$dropdown-border-radius: 2px;
+$dropdown-border-width: 0;
+$dropdown-box-shadow: 0 4px 4px rgba(205, 205, 228, 0.36);
+$dropdown-link-color: $audicus-dark;
+$dropdown-link-hover-color: $audicus-blue;
+$dropdown-link-hover-bg: #f3f3f4;
+$dropdown-link-active-color: $audicus-dark;
+$dropdown-link-active-bg: $audicus-white;
+
+//tabs
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-active-color: $audicus-dark;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-border-color: #96e02d;
+
+//progress
+$progress-font-size: ($font-size-base * .75) !default;
+$progress-bg: #f3f3f4;
+$progress-border-radius: 2px;
+$progress-box-shadow: none;
+
+// Tables
+
+$table-cell-padding: .46rem;
+
+$table-bg: transparent !default;
+$table-accent-bg: $audicus-white;
+
+$table-border-width: 0;
+
+$table-head-bg: transparent;
+$table-head-color: $audicus-mid;
