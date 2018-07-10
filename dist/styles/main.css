@@ -10718,14 +10718,14 @@ h3,
 }
 
 .btn-primary {
-  color: #1a1919;
+  color: #FFFFFF;
   background-color: #E99938;
   border-color: #E99938;
 }
 
 .btn-primary:hover {
-  color: #FFFFFF;
-  background-color: #e28719;
+  color: #e28719;
+  background: rgba(233, 153, 56, 0.07);
   border-color: #d68018;
 }
 
@@ -10737,9 +10737,9 @@ h3,
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: #1a1919;
-  background-color: #E99938;
-  border-color: #E99938;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -10764,8 +10764,8 @@ h3,
 }
 
 .btn-secondary:hover {
-  color: #FFFFFF;
-  background-color: #149bc3;
+  color: #149bc3;
+  background: rgba(23, 183, 230, 0.07);
   border-color: #1292b8;
 }
 
@@ -10777,9 +10777,9 @@ h3,
 
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-  color: #FFFFFF;
-  background-color: #17B7E6;
-  border-color: #17B7E6;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active,
@@ -10798,14 +10798,14 @@ h3,
 }
 
 .btn-success {
-  color: #1a1919;
+  color: #FFFFFF;
   background-color: #96E02D;
   border-color: #96E02D;
 }
 
 .btn-success:hover {
-  color: #1a1919;
-  background-color: #82c91e;
+  color: #82c91e;
+  background: rgba(150, 224, 45, 0.07);
   border-color: #7bbe1c;
 }
 
@@ -10817,9 +10817,9 @@ h3,
 
 .btn-success.disabled,
 .btn-success:disabled {
-  color: #1a1919;
-  background-color: #96E02D;
-  border-color: #96E02D;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-success:not(:disabled):not(.disabled):active,
@@ -10838,14 +10838,14 @@ h3,
 }
 
 .btn-info {
-  color: #1a1919;
+  color: #FFFFFF;
   background-color: #44c6ec;
   border-color: #44c6ec;
 }
 
 .btn-info:hover {
-  color: #FFFFFF;
-  background-color: #21bbe9;
+  color: #21bbe9;
+  background: rgba(68, 198, 236, 0.07);
   border-color: #17b7e6;
 }
 
@@ -10857,9 +10857,9 @@ h3,
 
 .btn-info.disabled,
 .btn-info:disabled {
-  color: #1a1919;
-  background-color: #44c6ec;
-  border-color: #44c6ec;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-info:not(:disabled):not(.disabled):active,
@@ -10878,14 +10878,14 @@ h3,
 }
 
 .btn-warning {
-  color: #1a1919;
+  color: #FFFFFF;
   background-color: #F7D21E;
   border-color: #F7D21E;
 }
 
 .btn-warning:hover {
-  color: #1a1919;
-  background-color: #e7c108;
+  color: #e7c108;
+  background: rgba(247, 210, 30, 0.07);
   border-color: #dab608;
 }
 
@@ -10897,9 +10897,9 @@ h3,
 
 .btn-warning.disabled,
 .btn-warning:disabled {
-  color: #1a1919;
-  background-color: #F7D21E;
-  border-color: #F7D21E;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-warning:not(:disabled):not(.disabled):active,
@@ -10924,8 +10924,8 @@ h3,
 }
 
 .btn-danger:hover {
-  color: #FFFFFF;
-  background-color: #f01d47;
+  color: #f01d47;
+  background: rgba(242, 65, 100, 0.07);
   border-color: #ef113d;
 }
 
@@ -10937,9 +10937,9 @@ h3,
 
 .btn-danger.disabled,
 .btn-danger:disabled {
-  color: #FFFFFF;
-  background-color: #F24164;
-  border-color: #F24164;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-danger:not(:disabled):not(.disabled):active,
@@ -10958,14 +10958,14 @@ h3,
 }
 
 .btn-light {
-  color: #1a1919;
+  color: #FFFFFF;
   background-color: #CDCDE4;
   border-color: #CDCDE4;
 }
 
 .btn-light:hover {
-  color: #1a1919;
-  background-color: #b4b4d7;
+  color: #b4b4d7;
+  background: rgba(205, 205, 228, 0.07);
   border-color: #acacd2;
 }
 
@@ -10977,8 +10977,8 @@ h3,
 
 .btn-light.disabled,
 .btn-light:disabled {
-  color: #1a1919;
-  background-color: #CDCDE4;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
   border-color: #CDCDE4;
 }
 
@@ -11004,8 +11004,8 @@ h3,
 }
 
 .btn-dark:hover {
-  color: #FFFFFF;
-  background-color: #212130;
+  color: #212130;
+  background: rgba(49, 49, 70, 0.07);
   border-color: #1c1c28;
 }
 
@@ -11017,9 +11017,9 @@ h3,
 
 .btn-dark.disabled,
 .btn-dark:disabled {
-  color: #FFFFFF;
-  background-color: #313146;
-  border-color: #313146;
+  color: #CDCDE4;
+  background-color: #F3F3F4;
+  border-color: #CDCDE4;
 }
 
 .btn-dark:not(:disabled):not(.disabled):active,

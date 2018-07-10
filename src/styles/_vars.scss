@@ -40,6 +40,8 @@ $theme-colors: (
   secondary: $audicus-blue
 );
 
+$enable-gradients: false;
+
 /*
 Fonts
  */
@@ -78,6 +80,8 @@ $pagination-active-border-color: $audicus-light;
 $pagination-padding-x: 0.95rem;
 $pagination-padding-y: 0.5625rem;
 $pagination-line-height:1.4375rem;
+
+
 
 //buttons
 // $btn-font-weight: $font-weight-bold;
