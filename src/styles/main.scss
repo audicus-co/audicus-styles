@@ -1,12 +1,18 @@
 @import "vars";
 @import "bootvars";
-@import "mixins";
-
 // Vendors
 @import "~bootstrap/scss/bootstrap";
-
+@import "mixins";
 @import "typography";
 @import "base";
 @import "layout";
 @import "blocks/blocks.scss";
 @import "helpers";
+
+
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant(#fff, $value);
+  }
+}
