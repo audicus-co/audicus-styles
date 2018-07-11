@@ -22,6 +22,18 @@ $color-dark: $audicus-dark;
 $color-mid: $audicus-mid;
 $color-light: $audicus-light;
 
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
 $colors: (
   white: $color-white,
   blue: $color-blue,
@@ -75,45 +87,45 @@ $icon-lg: $icon-sm * 1.5;
 
 //paginations
 $pagination-color: $audicus-mid;
+$pagination-bg:                     $gray-200;
 $pagination-border-color: $audicus-light;
 $pagination-active-border-color: $audicus-light;
-$pagination-padding-x: 0.95rem;
-$pagination-padding-y: 0.5625rem;
-$pagination-line-height:1.4375rem;
-
-
+$pagination-padding-x: 0.91rem;
+$pagination-padding-y: 0.5rem;
+$pagination-line-height: 1.4375rem;
+$pagination-hover-bg: $audicus-orange;
+$pagination-hover-color: $audicus-white;
 
 //buttons
-$btn-padding-y:               0.5rem;
-$btn-padding-x:               2rem;
-$btn-line-height:             1.125;
+$btn-padding-y:               0.625rem;
+$btn-padding-x:               2.36rem;
+$btn-line-height:             1.333;
 $btn-font-weight:             $font-weight-bold;
 $btn-box-shadow:              none;
 $btn-focus-box-shadow:        none;
-$btn-disabled-opacity:        .65;
+$btn-disabled-opacity:        1;
 $btn-active-box-shadow:       none;
 
 $btn-link-disabled-color:     $audicus-light;
 
 $btn-block-spacing-y:         1.0625rem;
 
+$btn-line-height-lg: 1.35;
+$input-btn-padding-y-lg: 0.75rem;
+
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius:           2px;
 $btn-border-radius-lg:        2px;
 $btn-border-radius-sm:        2px;
 
-// // Badges
-//
-$badge-font-size:                   1.125rem;
-$badge-font-weight:                 $font-weight-bold;
-$badge-padding-y:                   .42em !default;
-$badge-padding-x:                   .4em !default;
-$badge-border-radius:               0.9444rem;
+// Badges
+$badge-font-size: 1.125rem;
+$badge-font-weight: $font-weight-bold;
+$badge-padding-y: .42em;
+$badge-border-radius: 17px;
 
-$badge-pill-padding-x:              1.485em;
-// Use a higher than normal value to ensure completely rounded edges when
-// customizing padding or font-size on labels.
-$badge-pill-border-radius:          0.9444rem;
+$badge-pill-padding-x: 1.4em;
+$badge-pill-border-radius: 0.9444rem;
 
 // Forms
 $input-line-height: 1.44;
