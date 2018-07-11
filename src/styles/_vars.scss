@@ -84,18 +84,6 @@ $pagination-line-height:1.4375rem;
 
 
 //buttons
-// $btn-font-weight: $font-weight-bold;
-// $btn-border-width: none;
-// $btn-padding-x: $font-size-base;
-// $btn-border-radius: none;
-// $link-color: $audicus-dark;
-// $link-hover-color: $audicus-dark;
-// $border-radius: none;
-// $border-radius-lg: none;
-// $border-radius-sm: none;
-// $input-btn-padding-y: 0.5rem;
-// $btn-box-shadow: inset 0 1px 0 $audicus-white, 0 1px 1px $audicus-white;
-
 $btn-padding-y:               0.5rem;
 $btn-padding-x:               2rem;
 $btn-line-height:             1.125;
@@ -113,14 +101,6 @@ $btn-block-spacing-y:         1.0625rem;
 $btn-border-radius:           2px;
 $btn-border-radius-lg:        2px;
 $btn-border-radius-sm:        2px;
-
-
-// Links
-//
-// Style anchor elements.
-
-$link-color: $audicus-dark;
-$link-decoration: underline;
 
 // // Badges
 //
@@ -174,11 +154,8 @@ $progress-box-shadow: none;
 // Tables
 
 $table-cell-padding: .46rem;
-
 $table-bg: transparent !default;
 $table-accent-bg: $audicus-white;
-
 $table-border-width: 0;
-
 $table-head-bg: transparent;
 $table-head-color: $audicus-mid;

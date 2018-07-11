@@ -51,14 +51,14 @@
 
 @mixin button-outline-variant($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
   color: $color;
-  background-color: red;
+  background-color: #f3f3f4;
   background-image: none;
   border-color: $color;
 
   &:hover {
-    color: $color-hover;
-    background-color: $active-background;
-    border-color: $active-border;
+    color: $color;
+    background: rgba($color, 0.09);
+    border-color: $color;
   }
 
   &:focus,
@@ -68,8 +68,9 @@
 
   &.disabled,
   &:disabled {
-    color: $color;
-    background-color: transparent;
+    color: $audicus-light;
+    background-color: #f3f3f4;
+    border-color: $audicus-light;
   }
 
   &:not(:disabled):not(.disabled):active,

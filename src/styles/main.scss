@@ -8,9 +8,11 @@
 
 //Override mixins
 @import "mixins/buttons";
+@import "mixins/badge";
 
 //Override mixins
 @import "overrides/buttons";
+@import "overrides/badge";
 
 
 @import "typography";
