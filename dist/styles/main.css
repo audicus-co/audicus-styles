@@ -12144,33 +12144,13 @@ a.text-dark:focus {
   background-size: 100% 100%;
 }
 
-.form-group {
-  position: relative;
-}
-
-.form-group label {
-  position: absolute;
-  top: 0;
-  left: 0.875rem;
-  -webkit-transform: translateY(0.5625rem);
-          transform: translateY(0.5625rem);
-  transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
-  color: #17B7E6;
-  line-height: 1.38888889;
-}
-
-.form-group label.active {
-  -webkit-transform: translateY(-1.7rem);
-          transform: translateY(-1.7rem);
-}
-
-.form-group input {
-  font-weight: 600;
-}
-
 .form-group .input-group .btn-outline-secondary {
   background-color: transparent;
   border: 1px solid #CDCDE4;
+}
+
+.form-group .input-group .btn-light {
+  color: #313146;
 }
 
 .form-group .input-group input:disabled::-webkit-input-placeholder {
@@ -12191,6 +12171,34 @@ a.text-dark:focus {
 .form-group .input-group input:disabled:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #858597;
+}
+
+.mat-div {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+
+.mat-div label {
+  display: block;
+  font-size: 16px;
+  -webkit-transform: translate(0.875rem, 40px);
+          transform: translate(0.875rem, 40px);
+  color: #e2e2e2;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #17B7E6;
+  line-height: 1.38888889;
+}
+
+.mat-div input {
+  font-weight: 600;
+  position: relative;
+  background-color: transparent !important;
+}
+
+.is-completed label {
+  -webkit-transform: translate(0.875rem, 0);
+          transform: translate(0.875rem, 0);
 }
 
 .font-color-blue {
