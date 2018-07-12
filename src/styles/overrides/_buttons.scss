@@ -5,6 +5,12 @@
 }
 
 @each $color, $value in $theme-colors {
+  .btn-lg.btn-#{$color} {
+    @include lg-button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
   }

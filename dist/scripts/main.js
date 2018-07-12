@@ -10459,6 +10459,10 @@ window.$ = window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {
   var title = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("title").text();
   console.log(title + " is ready.");
+
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".form-control").on('focus blur', function () {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).prev().toggleClass('active');
+  });
 });
 
 /***/ }),

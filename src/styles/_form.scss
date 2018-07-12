@@ -1,0 +1,41 @@
+.form-group {
+	position: relative;
+
+	label {
+		position: absolute;
+		top: 0;
+		left: 0.875rem;
+		transform: translateY(0.5625rem);
+		transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
+		color: $audicus-blue;
+		line-height: (25 / 18);
+
+		&.active {
+			transform: translateY(-1.7rem);
+		}
+	}
+
+	input {
+		font-weight: 600;
+	}
+
+	.input-group {
+		.btn-outline-secondary {
+			background-color: transparent;
+			border: 1px solid $audicus-light;
+		}
+
+		input:disabled::-webkit-input-placeholder { /* WebKit browsers */
+			color: $audicus-mid;
+		}
+		input:disabled:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			color: $audicus-mid;
+		}
+		input:disabled::-moz-placeholder { /* Mozilla Firefox 19+ */
+			color: $audicus-mid;
+		}
+		input:disabled:-ms-input-placeholder { /* Internet Explorer 10+ */
+			color: $audicus-mid;
+		}
+	}
+}

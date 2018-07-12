@@ -71,7 +71,7 @@ $font-weight-normal:          400;
 $font-weight-bold:            700;
 
 // Heading
-$font-heading-family: $font-sans-serif;
+$font-heading-family: $font-serif;
 
 // Body
 $font-body-family: $font-sans-serif;
@@ -87,7 +87,7 @@ $icon-lg: $icon-sm * 1.5;
 
 //paginations
 $pagination-color: $audicus-mid;
-$pagination-bg:                     $gray-200;
+$pagination-bg: #f6f6f7;
 $pagination-border-color: $audicus-light;
 $pagination-active-border-color: $audicus-light;
 $pagination-padding-x: 0.91rem;
