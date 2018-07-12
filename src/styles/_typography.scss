@@ -10,12 +10,19 @@
   font-weight: 400;
   font-style: normal;
   width: 100%;
+  letter-spacing: 0.34px;
+}
+
+@mixin type-largeheading {
+  @include type-base-heading;
+  font-size: rem-calc(48);
+  line-height: (54 / 48);
 }
 
 @mixin type-heading {
   @include type-base-heading;
-  font-size: rem-calc(48);
-  line-height: (54 / 48);
+  font-size: rem-calc(38);
+  line-height: (54 / 38);
 }
 
 @mixin type-subheading {
@@ -44,13 +51,31 @@
 }
 
 h1, .h1, .heading {
+  @include type-largeheading;
+}
+
+h2, .h2 {
   @include type-heading;
 }
 
-h2, .h2, .subheading {
+.subheading {
   @include type-subheading;
+  letter-spacing: 1.09px;
 }
 
 h3, .h3, .smallheading {
   @include type-smallheading;
+  letter-spacing: 1.09px;
+}
+
+.h5 {
+  @include type-base-body;
+  font-size: rem-calc(22);
+  line-height: (27 / 22);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+p {
+  @include type-body;
 }

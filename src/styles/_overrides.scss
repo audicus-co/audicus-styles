@@ -1,6 +1,69 @@
+.light-bg {
+  background-color: rgba(243, 243, 244, .71);
+}
 
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    @include button-variant($value, $value);
+.btn {
+  letter-spacing: 0.6px;
+  font-size: 1.125rem;
+}
+
+.btn-lg {
+  font-size: 1.125rem;
+}
+
+.btn-sm {
+  font-size: 1rem;
+}
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: $font-weight-normal;
+  color: $audicus-dark;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  border-bottom: 2px solid $audicus-blue;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+
+  @include hover {
+    color: $audicus-dark;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 9px solid $audicus-green;
+    margin-bottom: -7px;
   }
+
+  &:focus,
+  &.focus {
+    text-decoration: none;
+    border: none;
+    border-bottom:2px solid $audicus-green;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    border-bottom: none;
+  }
+}
+
+//tabs
+.page-link {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+
+  &:hover {
+    background-color: $pagination-hover-bg;
+  }
+}
+
+//links
+a {
+  border-bottom: 1px solid $audicus-blue;
 }

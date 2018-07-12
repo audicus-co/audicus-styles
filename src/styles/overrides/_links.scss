@@ -1,0 +1,5 @@
+@each $color, $value in $colors {
+  .link-#{$color} {
+    @include link-variant($value, $value);
+  }
+}

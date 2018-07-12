@@ -10459,6 +10459,16 @@ window.$ = window.jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () {
   var title = __WEBPACK_IMPORTED_MODULE_0_jquery___default()("title").text();
   console.log(title + " is ready.");
+
+  //input label styles
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".mat-div input").focus(function () {
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).parent().addClass("is-active is-completed");
+  });
+
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".mat-div input").focusout(function () {
+    if (__WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).val() === "") __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).parent().removeClass("is-completed");
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).parent().removeClass("is-active");
+  });
 });
 
 /***/ }),

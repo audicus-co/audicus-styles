@@ -1,0 +1,21 @@
+.list-numbered {
+  counter-reset: section;
+
+  h1, h2, h3, h4, h5 {
+    padding-left: 55px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  h1::before, h2::before, h3::before, h4::before, h5::before {
+    counter-increment: section;
+    content: counter(section)'.';
+    margin-right: 20px;
+    color: $audicus-blue;
+    font-family: $font-serif;
+    font-weight: $font-weight-bold;
+    position: absolute;
+    left: 0;
+    //font-size: rem-calc(38);
+  }
+}
