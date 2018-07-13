@@ -23,6 +23,14 @@
 			color: $audicus-mid;
 		}
 	}
+
+
+
+  .input-group .form-control:focus+.input-group-append {
+    .btn {
+      border-color: $audicus-light;
+    }
+  }
 }
 
 .mat-div {

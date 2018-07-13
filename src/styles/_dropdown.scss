@@ -1,0 +1,107 @@
+.btn.dropdown-btn {
+  border: 1px solid $input-border-color;
+  text-align: left;
+  padding: 0.5625rem 0.75rem;
+  min-width: 230px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAA1ElEQVQoU82RQQ7BYBCF3zQSSzaURiJOwF7acIM6AW7gJo6AG/QGhNpzAiTyUza1bCL/yIhKtT2Af/nmfZP/zSPkPNNXHhgc2NYgPaZcYKNY9MC2MvN/BExfTVjjeHMsL85j5mSorpVLhCaZvgrBKBHT+OrU5wKlgdr6MmLiGQgPqmzPHYONVRJKAvIDMKZi1qR77yslISaeE9NIdGYsiDCMzfduY/c96xvShuRopro5aUO7Yhb9p4fy8lAuFoorAO0PtI+eUS/st8J4Saa4BIS0WaAX8uNx2+KTgkAAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1.125rem) center;
+  color: $audicus-dark;
+  font-weight: 600;
+  letter-spacing: 0.56px;
+  line-height: $input-line-height;
+}
+
+// The dropdown menu
+.dropdown-menu {
+  padding: $dropdown-padding-y 0;
+  border: none;
+  @include border-radius($dropdown-border-radius);
+  box-shadow: $dropdown-box-shadow;
+}
+
+.dropright {
+  .dropdown-menu {
+    margin-top: 0;
+    margin-left: $dropdown-spacer;
+  }
+
+  .dropdown-toggle {
+    @include caret(right);
+    &::after {
+      vertical-align: 0;
+    }
+  }
+}
+
+.dropleft {
+  .dropdown-menu {
+    margin-top: 0;
+    margin-right: $dropdown-spacer;
+  }
+
+  .dropdown-toggle {
+    @include caret(left);
+    &::before {
+      vertical-align: 0;
+    }
+  }
+}
+
+// Dividers (basically an `<hr>`) within the dropdown
+.dropdown-divider {
+  @include nav-divider($dropdown-divider-bg);
+}
+
+// Links, buttons, and more within the dropdown menu
+//
+// `<button>`-specific styles are denoted with `// For <button>s`
+.dropdown-item {
+  display: block;
+  width: 100%; // For `<button>`s
+  padding: $dropdown-item-padding-y $dropdown-item-padding-x;
+  clear: both;
+  font-weight: 600;
+  color: $dropdown-link-color;
+  text-align: inherit; // For `<button>`s
+  white-space: nowrap; // prevent links from randomly breaking onto new lines
+  background-color: transparent; // For `<button>`s
+  border: 0; // For `<button>`s
+
+  @include hover-focus {
+    color: $dropdown-link-hover-color;
+    text-decoration: none;
+    @include gradient-bg($dropdown-link-hover-bg);
+  }
+
+  &.active,
+  &:active {
+    color: $dropdown-link-active-color;
+    text-decoration: none;
+    @include gradient-bg($dropdown-link-active-bg);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $dropdown-link-disabled-color;
+    background-color: transparent;
+    // Remove CSS gradients if they're enabled
+    @if $enable-gradients {
+      background-image: none;
+    }
+  }
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+// Dropdown section headers
+.dropdown-header {
+  display: block;
+  padding: $dropdown-padding-y $dropdown-item-padding-x;
+  margin-bottom: 0; // for use with heading elements
+  font-size: $font-size-sm;
+  color: $dropdown-header-color;
+  white-space: nowrap; // as with > li > a
+}

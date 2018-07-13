@@ -52,18 +52,74 @@
   }
 }
 
-//tabs
-.page-link {
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.6px;
-
-  &:hover {
-    background-color: $pagination-hover-bg;
-  }
-}
-
 //links
 a {
   border-bottom: 1px solid $audicus-blue;
 }
+
+//tabs
+.nav.nav-tabs.custom-tabs {
+  justify-content: space-between;
+
+  a.nav-link {
+    color: $audicus-dark;
+    font-size: $font-size-base;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0;
+    line-height: (24 / 16);
+
+    &:hover, &:active {
+      color: $audicus-blue;
+    }
+  }
+
+  a.nav-link.disabled {
+    color: $audicus-mid;
+
+    &:hover, &:active {
+      color: $audicus-mid;
+      cursor: default;
+    }
+  }
+
+  a.nav-link.active {
+    border-bottom: 2px solid $audicus-green;
+
+    &:hover, &:active {
+      color: $audicus-dark;
+    }
+  }
+}
+
+.scroll-wrap {
+  height: 250px;
+  width: 100px;
+  overflow-y: scroll;
+
+  .scroll-content {
+    height: 1000px;
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f3f3f4; 
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: $audicus-dark;
+  border-radius: 2px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $audicus-dark;
+}
+
+
+
+
