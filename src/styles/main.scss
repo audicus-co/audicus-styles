@@ -1,32 +1,19 @@
 @import "vars";
 @import "bootvars";
+
 // Vendors
 @import "~bootstrap/scss/bootstrap";
 
-
-@import "mixins";
-
 //Override mixins
-@import "mixins/buttons";
-@import "mixins/badge";
-@import "mixins/links";
-@import "mixins/icons";
+@import "mixins/mixins.scss";
 
-//Override mixins
-@import "overrides/buttons";
-@import "overrides/badge";
-@import "overrides/links";
-@import "overrides/icons";
-
-@import "pagination";
-@import "list-numbered";
-@import "custom-control";
-@import "dropdown";
-@import "form";
 @import "icons";
 @import "typography";
 @import "base";
 @import "layout";
+
+@import "forms/forms.scss";
 @import "blocks/blocks.scss";
+
 @import "helpers";
-@import "overrides";
+@import "overrides/overrides.scss";

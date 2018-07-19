@@ -1,6 +1,6 @@
 @mixin link-variant($color, $border-color: $audicus-blue, $hover-color: darken($color, 30%)) {
   color: $color;
- 
+
   @include hover {
     color: $hover-color;
   }

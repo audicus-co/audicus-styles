@@ -1,3 +1,8 @@
+@import "buttons";
+@import "badge";
+@import "links";
+@import "icons";
+
 .light-bg {
   background-color: rgba(243, 243, 244, .71);
 }
@@ -108,7 +113,7 @@ a {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f3f3f4; 
+    background: #f3f3f4;
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb {
@@ -119,7 +124,3 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background: $audicus-dark;
 }
-
-
-
-
