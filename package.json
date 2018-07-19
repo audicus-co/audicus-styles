@@ -1,9 +1,10 @@
 {
-  "name": "barebones",
+  "name": "audicus-styles",
   "version": "1.0.0",
   "author": "Greg Hunt <greg@codecomment.io>",
-  "homepage": "https://codecomment.io",
+  "homepage": "https://audicus.com",
   "private": true,
+  "main": "src/styles/main.scss",
   "repository": {
     "type": "git",
     "url": "git@github.com:audicus-co/audicus-styles.git"
