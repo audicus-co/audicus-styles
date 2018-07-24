@@ -11,3 +11,22 @@
     background-color: $color !important;
   }
 }
+
+.hr-dot {
+  position: relative;
+  border-color: transparent;
+  background: transparent;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    left: calc(50% - 4px);
+    top: 0;
+    display: block;
+    background-color: transparent;
+    width: 6px;
+    height: 6px;
+    border: solid 2px $color-blue;
+    border-radius: 99em;
+  }
+}

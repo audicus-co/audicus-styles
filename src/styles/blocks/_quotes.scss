@@ -1,0 +1,18 @@
+.big-quote {
+  quotes: "“" "”" "‘" "’";
+  position: relative;
+  display: inline-block;
+
+  &:before,
+  &:after {
+    color: $color-blue;
+  }
+
+  &:before{
+    content: open-quote;
+    position: absolute;
+    top: -0.25em;
+    left: -0.5em;
+    font-size: 1.5em;
+  }
+}

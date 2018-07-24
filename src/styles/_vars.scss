@@ -48,7 +48,7 @@ $colors: (
 );
 
 $theme-colors: (
-  primary: $audicus-orange,
+  primary: $audicus-black,
   secondary: $audicus-blue
 );
 
@@ -65,7 +65,7 @@ $font-size-base: ($font-size-base * 1.125);
 $font-size-lg: ($font-size-base * 1.125);
 $font-size-sm: ($font-size-base * 1);
 
-//font-weight 
+//font-weight
 $font-weight-light:           300;
 $font-weight-normal:          400;
 $font-weight-bold:            700;
@@ -172,4 +172,3 @@ $table-accent-bg: $audicus-white;
 $table-border-width: 0;
 $table-head-bg: transparent;
 $table-head-color: $audicus-mid;
-

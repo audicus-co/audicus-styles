@@ -1,5 +1,27 @@
 .icon {
 	display: inline-block;
+
+	// Text Colors
+	@each $name, $color in $colors {
+		&-color-#{$name} {
+			color: $color;
+			svg, path {
+				fill: $color;
+			}
+		}
+	}
+
+	&-radiate {
+		animation: pulse 1s 1s infinite ease-in-out;
+		box-shadow:
+	    0 0 0 3em rgba(255, 255, 255, 0.03),
+	    0 0 0 2em rgba(255, 255, 255, 0.06),
+	    0 0 0 1em rgba(255, 255, 255, 0.09);
+
+		&:hover {
+			animation: none;
+		}
+	}
 }
 
 .icon-text {
@@ -13,8 +35,12 @@
 	border-radius: 100%;
 	padding: 1.25rem;
 	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: content-box;
 
-	span {
+	sup {
 		display: inline-block;
 		position: absolute;
 		width: 1rem;
@@ -33,11 +59,14 @@
 	&.icon-circle-sm {
 		width: 2.5625rem;
 		height: 2.5625rem;
-		padding: 0.5625rem;
+		padding: 0.25rem;
 	}
 
 	&.icon-sm {
 		padding: 1.5rem;
+	}
+	&.icon-lg {
+		padding: 2.5rem;
 	}
 }
 
@@ -61,4 +90,26 @@
   svg {
     fill: #313146;
   }
+}
+
+
+@keyframes pulse {
+  0% {
+		box-shadow:
+	    0 0 0 3em rgba(255, 255, 255, 0.01),
+	    0 0 0 2em rgba(255, 255, 255, 0.02),
+	    0 0 0 1em rgba(255, 255, 255, 0.03);
+  }
+  30% {
+		box-shadow:
+			0 0 0 3em rgba(255, 255, 255, 0.03),
+			0 0 0 2em rgba(255, 255, 255, 0.06),
+			0 0 0 1em rgba(255, 255, 255, 0.09);
+  }
+	60% {
+		box-shadow:
+			0 0 0 3em rgba(255, 255, 255, 0.01),
+			0 0 0 2em rgba(255, 255, 255, 0.02),
+			0 0 0 1em rgba(255, 255, 255, 0.03);
+	}
 }
