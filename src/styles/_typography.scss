@@ -13,12 +13,6 @@
   letter-spacing: 0.34px;
 }
 
-@mixin type-largeheading {
-  @include type-base-heading;
-  font-size: rem-calc(48);
-  line-height: (54 / 48);
-}
-
 @mixin type-heading {
   @include type-base-heading;
   font-size: rem-calc(38);
@@ -29,10 +23,6 @@
   @include type-base-body;
   font-size: rem-calc(28);
   line-height: (36 / 28);
-}
-
-@mixin type-smallheading {
-  @include type-subheading;
 }
 
 @mixin type-body {
@@ -50,11 +40,7 @@
   }
 }
 
-h1, .h1, .heading {
-  @include type-largeheading;
-}
-
-h2, .h2 {
+.heading {
   @include type-heading;
 }
 
@@ -63,17 +49,33 @@ h2, .h2 {
   letter-spacing: 1.09px;
 }
 
-h3, .h3, .smallheading {
-  @include type-smallheading;
-  letter-spacing: 1.09px;
+
+// Headings control size only.
+h1, .h1 {
+  font-size: rem-calc(48);
+  line-height: (54 / 48);
 }
 
-.h5 {
-  @include type-base-body;
+h2, .h2 {
+  font-size: rem-calc(38);
+  line-height: 1.42;
+}
+
+h3, .h3 {
+  font-size: rem-calc(28);
+}
+
+h4, .h4 {
   font-size: rem-calc(22);
   line-height: (27 / 22);
+}
+
+h5, .h5 {
+  font-size: rem-calc(18);
+}
+
+strong, .bold {
   font-weight: 600;
-  letter-spacing: 0;
 }
 
 p {

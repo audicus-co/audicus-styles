@@ -49,6 +49,18 @@ $link-decoration:           none;
 $link-hover-color:          darken($link-color, 15%);
 $link-hover-decoration:     none;
 
+$theme-colors: (
+  "primary":    $audicus-black,
+  "secondary":  $audicus-blue,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "white":      $color-white,
+  "dark":       $dark
+);
+
 
 // // Variables
 // //
