@@ -19,8 +19,6 @@
 
 @mixin type-subheading {
   @include type-base-body;
-  font-size: rem-calc(28);
-  line-height: (36 / 28);
 }
 
 @mixin type-body {
@@ -61,6 +59,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: rem-calc(28);
+  line-height: (36 / 28);
 }
 
 h4, .h4 {
