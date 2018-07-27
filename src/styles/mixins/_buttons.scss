@@ -4,6 +4,15 @@
   border-color: $background;
   @include box-shadow($btn-box-shadow);
 
+  &.btn-shadow {
+    box-shadow: 0 0.5em 1em rgba(black, 0.1);
+    transition: box-shadow ease-in-out 200ms;
+
+    &:hover {
+      box-shadow: 0 0.25em 0.5em rgba(black, 0.15);
+    }
+  }
+
   @include hover {
     color: $audicus-white;
     background: $hover-background;

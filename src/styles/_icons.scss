@@ -1,3 +1,9 @@
+.audicus-icon-light {
+	#audicus-icon path:first-child {
+		fill: $color-white;
+	}
+}
+
 .icon {
 	display: inline-block;
 
@@ -12,14 +18,33 @@
 	}
 
 	&-radiate {
-		animation: pulse 1s 1s infinite ease-in-out;
+		animation: pulse 2s 2s infinite ease-in-out;
 		box-shadow:
-	    0 0 0 3em rgba(255, 255, 255, 0.03),
-	    0 0 0 2em rgba(255, 255, 255, 0.06),
-	    0 0 0 1em rgba(255, 255, 255, 0.09);
+			0 0 0 3em rgba(255, 255, 255, 0.01),
+			0 0 0 2em rgba(255, 255, 255, 0.02),
+			0 0 0 1em rgba(255, 255, 255, 0.03);
 
 		&:hover {
 			animation: none;
+			box-shadow:
+				0 0 0 3em rgba(255, 255, 255, 0.03),
+				0 0 0 2em rgba(255, 255, 255, 0.06),
+				0 0 0 1em rgba(255, 255, 255, 0.09);
+		}
+		&-lg {
+			animation: pulseLg 2s 2s infinite ease-in-out;
+			box-shadow:
+				0 0 0 12em rgba(255, 255, 255, 0.03),
+				0 0 0 8em rgba(255, 255, 255, 0.06),
+				0 0 0 4em rgba(255, 255, 255, 0.09);
+
+			&:hover {
+				animation: none;
+				box-shadow:
+					0 0 0 12em rgba(255, 255, 255, 0.06),
+					0 0 0 8em rgba(255, 255, 255, 0.12),
+					0 0 0 4em rgba(255, 255, 255, 0.18);
+			}
 		}
 	}
 }
@@ -100,16 +125,37 @@
 	    0 0 0 2em rgba(255, 255, 255, 0.02),
 	    0 0 0 1em rgba(255, 255, 255, 0.03);
   }
-  30% {
+  25% {
 		box-shadow:
 			0 0 0 3em rgba(255, 255, 255, 0.03),
 			0 0 0 2em rgba(255, 255, 255, 0.06),
 			0 0 0 1em rgba(255, 255, 255, 0.09);
   }
-	60% {
+	50% {
 		box-shadow:
 			0 0 0 3em rgba(255, 255, 255, 0.01),
 			0 0 0 2em rgba(255, 255, 255, 0.02),
 			0 0 0 1em rgba(255, 255, 255, 0.03);
+	}
+}
+
+@keyframes pulseLg {
+  0% {
+		box-shadow:
+	    0 0 0 12em rgba(255, 255, 255, 0.03),
+	    0 0 0 8em rgba(255, 255, 255, 0.06),
+	    0 0 0 4em rgba(255, 255, 255, 0.09);
+  }
+  25% {
+		box-shadow:
+			0 0 0 12em rgba(255, 255, 255, 0.06),
+			0 0 0 8em rgba(255, 255, 255, 0.12),
+			0 0 0 4em rgba(255, 255, 255, 0.18);
+  }
+	50% {
+		box-shadow:
+			0 0 0 12em rgba(255, 255, 255, 0.03),
+			0 0 0 8em rgba(255, 255, 255, 0.06),
+			0 0 0 4em rgba(255, 255, 255, 0.09);
 	}
 }

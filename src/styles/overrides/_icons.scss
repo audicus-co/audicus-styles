@@ -2,4 +2,10 @@
   .icon-#{$color} {
     @include icon-variant($value, $value);
   }
+
+  .icon-color-#{$color} {
+    path {
+      fill: $value;
+    }
+  }
 }
