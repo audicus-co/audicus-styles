@@ -1,5 +1,5 @@
 .audicus-icon-light {
-	#audicus-icon path:first-child {
+	svg path:first-child {
 		fill: $color-white;
 	}
 }
@@ -55,8 +55,8 @@
 }
 
 .icon-circle {
-	width: 4.5625rem;
-	height: 4.5625rem;
+	width: 4.5625em;
+	height: 4.5625em;
 	border-radius: 100%;
 	padding: 1.25rem;
 	position: relative;
@@ -81,9 +81,15 @@
 		right: -2px;
 	}
 
-	&.icon-circle-sm {
+	&-sm {
 		width: 2.5625rem;
 		height: 2.5625rem;
+		padding: 0.25rem;
+	}
+
+	&-xs {
+		width: 2rem;
+		height: 2rem;
 		padding: 0.25rem;
 	}
 
