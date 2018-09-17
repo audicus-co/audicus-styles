@@ -19,6 +19,13 @@
   }
 }
 
+// Text Underline
+@each $name, $color in $colors {
+  .text-color-#{$name} {
+    color: $color !important;
+  }
+}
+
 .hr-dot {
   position: relative;
   border-color: transparent;

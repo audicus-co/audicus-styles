@@ -1,0 +1,102 @@
+$ht-breadcrumb-icon-size: 28px;
+$ht-breadcrumb-complete-color: $color-green;
+
+.ht-breadcrumb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &-item {
+    flex: 1;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 200%;
+      background-color: white;
+      position: absolute;
+      top: ($ht-breadcrumb-icon-size / 2) - 2;
+      left: -50%;
+      z-index: 1;
+    }
+
+    &-complete {
+      .ht-breadcrumb-icon {
+        background-color: $ht-breadcrumb-complete-color;
+      }
+      &::after {
+        background-color: $ht-breadcrumb-complete-color;
+        z-index: 2;
+      }
+    }
+
+    &-first {
+      text-align: left;
+
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+
+      &.ht-breadcrumb-item-complete::after {
+        width: 150%;
+      }
+    }
+
+    &-last {
+      text-align: right;
+
+      &::after {
+        width: 150%;
+      }
+
+      &.ht-breadcrumb-item-active::after {
+        z-index: 2;
+      }
+    }
+
+    > a {
+      display: block;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  &-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: $ht-breadcrumb-icon-size;
+    height: $ht-breadcrumb-icon-size;
+    border-radius: 50%;
+    background-color: white;
+
+    .icon {
+      height: 19px;
+    }
+
+    svg {
+      width: 15px;
+    }
+  }
+
+  &-label {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: rem-calc(14);
+  }
+
+  &-active-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: $color-blue;
+    border-radius: 50%;
+  }
+}
