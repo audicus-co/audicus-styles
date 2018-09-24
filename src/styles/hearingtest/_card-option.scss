@@ -1,0 +1,46 @@
+.ht-card-option-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ht-card-option {
+  margin: 2rem;
+  width: 300px;
+  height: 280px;
+
+  input {
+    display: none;
+
+    &:checked + label {
+      border-color: $color-blue;
+    }
+  }
+
+  label, a {
+    color: $color-dark;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 1rem 4rem -1rem rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    transition: ease-in-out 200ms border;
+
+    &:hover {
+      color: $color-dark;
+      border-color: $color-blue;
+    }
+  }
+
+  .icon svg {
+    width: 3em;
+    height: auto;
+  }
+}

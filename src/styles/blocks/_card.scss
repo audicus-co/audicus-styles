@@ -1,0 +1,23 @@
+.card {
+    color: $color-dark;
+    overflow: hidden;
+    transition: background ease-in-out 200ms;
+
+    &-header {
+        min-height: 190px;
+        background: no-repeat center center;
+        background-size: cover;
+        transition: transform ease-in-out 200ms;
+    }
+
+    &:hover {
+        color: $color-dark;
+        background-color: rgba($color-light, 0.15);
+
+        .card-header {
+            transform: scale(1.2, 1.2);
+        }
+    }
+    // &-body {
+    // }
+}

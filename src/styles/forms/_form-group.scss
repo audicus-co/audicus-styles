@@ -1,5 +1,5 @@
 .form-group {
-	
+
 	.input-group {
 		.btn-outline-secondary {
 			background-color: transparent;
@@ -33,6 +33,28 @@
   }
 }
 
+select.form-control {
+	background-color: transparent;
+}
+
+.help-text {
+	font-size: 0.75rem;
+	color: $audicus-mid;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.form-control.has-error {
+	color: $color-red;
+}
+
+.help-error {
+	font-size: 0.75rem;
+	color: $color-red;
+	font-weight: 400;
+	text-indent: 0.875rem;
+}
+
 .mat-div {
   padding: 30px 0 0 0;
   position: relative;
@@ -40,12 +62,17 @@
   label {
   	display: block;
 	  font-size: 16px;
-	  transform: translate(0.875rem, 40px);
 	  color: #e2e2e2;
 	  transition: all 0.5s;
 	  color: $audicus-blue;
 		line-height: (25 / 18);
   }
+
+	&-placehold {
+		label {
+			transform: translate(0.875rem, 40px);
+		}
+	}
 
   input {
   	font-weight: 600;
