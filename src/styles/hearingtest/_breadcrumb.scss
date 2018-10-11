@@ -65,9 +65,11 @@ $ht-breadcrumb-line-color: #e5e5f3;
     }
 
     &-label {
-        width: 100%;
-        margin-top: 1rem;
         font-size: rem-calc(14);
+        position: absolute;
+        width: 200%;
+        text-align: center;
+        left: -50%;
     }
 
     &-active-dot {
