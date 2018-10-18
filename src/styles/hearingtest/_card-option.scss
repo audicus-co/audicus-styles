@@ -1,12 +1,17 @@
 .ht-card-option-group {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
 }
 
 .ht-card-option {
   margin: 2rem;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 280px;
 
   input {
@@ -26,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 40px;
     cursor: pointer;
     border-radius: 2px;
     box-shadow: 0 1rem 4rem -1rem rgba(0, 0, 0, 0.5);
@@ -40,7 +45,7 @@
   }
 
   .icon svg {
-    width: 3em;
-    height: auto;
+    width: auto;
+    height: 40px;
   }
 }

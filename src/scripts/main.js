@@ -4,8 +4,7 @@ import 'bootstrap/dist/js/bootstrap';
 
 
 $(document).ready(function(){
-  var title = $("title").text();
-  console.log(title + " is ready.");
+  $('[data-toggle="tooltip"]').tooltip();
 
   //input label styles
   $(".mat-div input").focus(function(){

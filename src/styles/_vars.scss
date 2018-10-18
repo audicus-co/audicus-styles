@@ -34,6 +34,15 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
+$product-colors: (
+  beige: #ffcd8d,
+  bronze: #fe931b,
+  black: #161621,
+  silver: #afafc6,
+  grey: #8e8ea0,
+  white: #ffffff,
+);
+
 $colors: (
   white: $color-white,
   blue: $color-blue,
