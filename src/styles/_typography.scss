@@ -38,6 +38,22 @@
 
 .heading {
   @include type-heading;
+
+  &-quote {
+    quotes: "“" "”";
+    position: relative;
+    padding-left: 1em;
+    margin-left: -1em;
+
+    &::before {
+      content: open-quote;
+      position: absolute;
+      color: $color-blue;
+      left: 0;
+      top: -0.25em;
+      font-size: 2em;
+    }
+  }
 }
 
 .subheading {
