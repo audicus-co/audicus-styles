@@ -31,6 +31,7 @@ $ht-breadcrumb-line-color: #e5e5f3;
         &-complete {
             .ht-breadcrumb-icon {
                 fill: $ht-breadcrumb-complete-color;
+                border-color: $ht-breadcrumb-complete-color;
             }
             a {
                 color: $color-dark;
