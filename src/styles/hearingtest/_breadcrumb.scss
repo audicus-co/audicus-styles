@@ -38,7 +38,8 @@ $ht-breadcrumb-line-color: #e5e5f3;
             }
         }
 
-        > a {
+        > a,
+        > span {
             display: block;
             position: relative;
             z-index: 3;
